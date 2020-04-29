@@ -1,0 +1,74 @@
+/**
+ * --------------------------------------------------------------
+ * CSS style aplikasi Absensi2014
+ * untuk halaman login
+ * --------------------------------------------------------------
+ */
+#login_box {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	width:26em;
+	height:16em;
+	margin-top: -8em; /*set to a negative number 1/2 of your height*/
+	margin-left: -13em; /*set to a negative number 1/2 of your width*/
+	border: 1px solid #7F5F00;
+	background-color: #f3f3f3;
+}
+
+h1{
+	background-color:#FFCB2D;
+	border-bottom:1px solid #7F5F00;
+	font-size:120%;
+	font-weight:bolder;
+	color:#7F5F00;	
+	padding-top:1em;
+	padding-bottom:1em;
+	text-align:center;
+}
+
+#login_form{
+	padding:10px;
+}
+
+#login_form p label{
+	display:block;
+	float:left;
+	width:80px;
+}
+
+#login_form p{
+	margin-bottom:10px;
+}
+
+#login_form p#message{
+    margin-left: 60px;
+}
+
+#submit{
+	padding:0 4px;
+	border:#666 solid 1px;
+	margin-left:80px;
+}
+
+#login_box .field_error, #login_box #message{
+	font-size:12px;
+	color:#F00;
+}
+
+#login_box #form_error_message{
+	margin-bottom:20px;
+}
+
+#login_box .field_error{
+	clear:both;
+	margin-left:80px;
+}
+
+.form_field{
+	border:#666 solid 1px;
+}
+
+.form_field:focus{
+	background-color:#F9E9A9;
+}

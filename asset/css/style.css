@@ -1,0 +1,283 @@
+/**
+ * --------------------------------------------------------------
+ * CSS style aplikasi Absensi2014
+ * untuk semua halaman kecuali halaman login
+ * --------------------------------------------------------------
+ */
+
+/* =Layout
+---------------------------------------------------------------*/
+#masthead, #main, #footer{
+	clear:both;
+	float:left;
+	margin:0 10%;
+	width:80%;
+}
+
+#navigation{
+	clear:both;
+	float:left;
+	width:100%;
+}
+
+/* =Layout Masthead
+---------------------------------------------------------------*/
+#masthead{
+	background:url(../images/logo.png) no-repeat;
+	height:100px;	
+}
+
+#masthead h1{
+	display:none;
+}
+
+/* =Layout Navigation
+---------------------------------------------------------------*/
+#menu_tab{
+	background:#FFCB2D url(../images/nav_bg.png) repeat-x bottom left;
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:10px 10% 0 10%;
+	width:80%;
+}
+
+#menu_tab li{
+	float:left;
+}
+
+#menu_tab a{
+	background:#F9E9A9 url(../images/off_bg.png) repeat-x top left;
+	border:1px solid #9B8748;
+	border-bottom:none;
+	color:#333;
+	display:block;
+	float:left;	
+	margin:0 1px 0 0;
+	padding:4px 8px;	
+	text-decoration:none;
+}
+
+#menu_tab a:hover, 
+body#absen #tab_absen a,
+body#rekap #tab_rekap a,
+body#siswa #tab_siswa a,
+body#semester #tab_semester a,
+body#kelas #tab_kelas a{
+	background: #fff url(../images/on_bg.png) repeat-x top left;
+	border-color: #727377;
+	color: #333;
+	padding-bottom: 5px;		
+}
+
+/* =Layout Main
+---------------------------------------------------------------*/
+#main{
+	padding:10px 0;
+}
+
+/* =Layout Footer
+---------------------------------------------------------------*/
+#footer{
+	border-top:1px solid #FFCB2D;
+	font-size:smaller;
+	font-weight:bold;
+	padding-top:5px;
+	text-align:right;	
+}
+
+/* =Table
+---------------------------------------------------------------*/
+table{
+	font-size:90%;
+}
+
+table th{
+	text-transform:uppercase;
+	font-weight:bold;
+	background:#ffcc33;
+}
+
+table td, table th {
+	text-align:left;
+	padding:6px 15px;
+}
+
+/* memberi jarak antar link edit dan hapus*/
+table td a {
+    margin-right: 10px;
+}
+
+.zebra {
+	background:#F9E9A9;
+}
+
+/* =Form
+---------------------------------------------------------------*/
+form{
+	padding:10px;
+}
+
+p label{
+	display:block;
+	float:left;
+	margin-right:10px;
+	text-align:right;
+	width:140px;
+}
+
+form p{
+	margin-bottom:10px;
+}
+
+#submit{
+    margin-left:150px;
+    font: 70% Arial,Helvetica,sans-serif;
+    height: 21px;
+}
+
+/*Posisi tombol simpan modul semester*/
+#semester #main form p #submit{
+    margin-left:0;
+    margin-top: 10px;
+}
+
+.form_field{
+	border:#666 solid 1px;
+}
+
+.form_field:focus{
+	background-color:#F9E9A9;
+}
+
+.field_error{
+	clear:both;
+	color:#F00;
+	margin-left:150px;
+}
+
+fieldset{
+	border:1px solid;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+
+/* =Link
+---------------------------------------------------------------*/
+#submit,
+a.add,
+a.edit,
+a.delete,
+a.cancel,
+a.excel,
+a.pdf {
+	font-size: 9pt;
+	color:#000000;
+	font-weight:bold;
+	text-decoration: none;
+
+    border:1px solid #666666;
+    padding-right:5px;
+    padding-left:20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    background-color: #dddddd;
+    background-position: 2px center;
+    background-repeat: no-repeat;
+}
+
+#submit:hover,
+a.add:hover,
+a.edit:hover,
+a.delete:hover,
+a.cancel:hover,
+a.excel:hover,
+a.pdf:hover {
+	color:#DDDDDD;
+    background-color: #666666;
+}
+
+#submit{
+    background-image:url("../images/icon_save.png");
+}
+a.add {
+    background-image:url("../images/icon_add.png");
+}
+a.edit {
+	background-image:url("../images/icon_edit.png");
+}
+a.delete {
+    background-image:url("../images/icon_delete.png");
+}
+a.cancel {
+    background-image:url("../images/icon_cancel.png");
+}
+a.excel {
+    background-image:url("../images/file_excel.png");
+}
+a.pdf {
+    background-image:url("../images/file_pdf.png");
+}
+
+/* =Pagination
+---------------------------------------------------------------*/
+#pagination{
+	margin-bottom:20px;
+    margin-top:20px;
+    color: #000000;
+}
+
+#pagination a
+{
+	text-decoration:none;
+    border:1px solid #FFCB2D;
+    background-color:#F9E9A9;
+    color:#000000;
+    padding:2px 8px;
+}
+
+#pagination a:hover
+{
+    background-color:#FFCB2D;
+    border:1px solid #FFCB2D;
+}
+
+#pagination strong {
+    padding:2px 8px;
+    border:1px solid #FFCB2D;
+    background-color:#FFCB2D;
+    color:#000000;
+}
+
+/* =Error404
+---------------------------------------------------------------*/
+.error_header{
+    font-size: 3em;
+}
+
+.error_content{
+    font-size: 4em;
+}
+
+/* =Misc
+---------------------------------------------------------------*/
+h2{
+	border-bottom:1px solid #FFCB2D;
+	font-size:1.5em;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+div.pesan{
+    color:#900;
+    font-weight:bold;
+    margin-bottom:10px;
+    background-color:#6F6;
+    padding:5px;
+    border:1px solid #090;
+}
+
+div#bottom_link{
+    margin:15px 0;
+}

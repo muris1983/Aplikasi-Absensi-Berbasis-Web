@@ -1,0 +1,100 @@
+/**
+ * --------------------------------------------------------------
+ * CSS style aplikasi Absensi2014
+ * untuk pop-up datepicker
+ * --------------------------------------------------------------
+ */
+
+/* the div that holds the date picker calendar */
+.dpDiv {
+	
+}
+
+/* the table (within the div) that holds the date picker calendar */
+.dpTable {
+	font-family: Verdana;
+	font-size: 12px;
+	text-align: center;	
+    color: #000000;    
+    background-color: #F9E9A9;	
+    border: 1px solid #FFCB2D;
+	}
+
+/* a table row that holds date numbers (either blank or 1-31) */
+.dpTR {	}
+
+/* the top table row that holds the month, year, and forward / 
+   backward buttons */
+.dpTitleTR { }
+
+/* the second table row, that holds the names of days of the week 
+   (Mo, Tu, We, etc.) */
+.dpDayTR { }
+
+/* the bottom table row, that has the "This Month" and "Close" 
+   buttons */
+.dpTodayButtonTR { }
+
+/* a table cell that holds a date number (either blank or 1-31) */
+.dpTD {	
+    border: 1px solid #ffffff;
+}
+
+/* a table cell that holds a highlighted day (usually either 
+   today's date or the current date field value) */
+.dpDayHighlightTD {
+	background-color: #CCCCCC;
+	border: 1px solid #AAAAAA;
+}
+
+/* the date number table cell that the mouse pointer is currently 
+   over (you can use contrasting colors to make it apparent which 
+   cell is being hovered over) */
+.dpTDHover {
+    border: 1px solid #FFCB2D;
+	cursor: pointer;
+}
+
+/* the table cell that holds the name of the month and the year */
+.dpTitleTD { }
+
+/* a table cell that holds one of the forward/backward buttons */
+.dpButtonTD { }
+
+/* the table cell that holds the "This Month" or "Close" button 
+   at the bottom */
+.dpTodayButtonTD { }
+
+/* a table cell that holds the names of days of the week 
+   (Mo, Tu, We, etc.) */
+.dpDayTD {
+    background-color: #FFCB2D;
+    color: #000000;
+}
+
+/* additional style information for the text that indicates the 
+   month and year */
+.dpTitleText {
+	font-size: 12px;
+    color: #000000;
+	font-weight: bold;
+	}
+
+/* additional style information for the cell that holds a 
+   highlighted day (usually either today's date or the current 
+   date field value) */ 
+.dpDayHighlight {
+	color: #000000;
+	font-weight: bold;
+}
+
+/* the forward/backward buttons at the top */
+.dpButton, .dpTodayButton {
+	font-family: Verdana;
+	font-size: 10px;
+    color: #000000;
+    background: #FFCB2D;
+	font-weight: bold;
+	padding: 0px;
+	border:0px;
+}
